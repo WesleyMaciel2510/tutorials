@@ -10,7 +10,7 @@ Route::middleware(['web', 'auth', 'core'])
         Route::get('{tutorial}/edit', 'Edit')->name('edit');
         Route::patch('{tutorial}', 'Update')->name('update');
         Route::delete('{tutorial}', 'Destroy')->name('destroy');
-        
+
         Route::get('initTable', 'Table@init')->name('initTable');
         Route::get('tableData', 'Table@data')->name('tableData');
         Route::get('exportExcel', 'Table@excel')->name('exportExcel');
